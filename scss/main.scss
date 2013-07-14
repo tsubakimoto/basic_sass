@@ -1,14 +1,9 @@
-$baseFontSize: 14px;
-$imgDir: "../img/";
+$brandColor: rgba(255, 0, 0, 0.9);
 
 #main {
 	width: 90%;
-//	background: url($imgDir + "bg.png");
-	background: url("#{$imgDir}bg.png");
 	p {
-		font-size: $baseFontSize;
-		.sub {
-			font-size: $baseFontSize - 2px;
-		}
+		color: lighten($brandColor, 30%);
+		font-size: 14px;
 	}
 }
