@@ -33,3 +33,19 @@ $animals: cat, dog, tiger;
 		background: url("#{$animal}.png");
 	}
 }
+
+
+$totalWidth: 940px;
+$columnCount: 10;
+
+@function getColumnWidth($width, $count) {
+	$padding: 10px;
+	$columnWidth: floor(($width - ($padding * ($count - 1))) / $count);
+	
+	@return $columnWidth;
+}
+
+.grid {
+	float: left;
+	width: getColumnWidth($totalWidth, $columnCount);
+}
