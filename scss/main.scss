@@ -1,9 +1,35 @@
-$brandColor: rgba(255, 0, 0, 0.9);
+$debugMode: true;
+$x: 10;
 
 #main {
-	width: 90%;
+	@if $debugMode == true {
+		color: red;
+	} @else {
+		color: green;
+	}
+	
 	p {
-		color: lighten($brandColor, 30%);
-		font-size: 14px;
+		@if $x > 20 {
+			color: blue;
+		} @else {
+			color: gray;
+		}
+	}
+}
+
+@for $i from 10 through 14 {
+	.fs#{$i} { font-size: #{$i}px; }
+}
+
+$j: 10;
+@while $j <= 14 {
+	.ft#{$j} { font-size: #{$j}px; }
+	$j: $j + 1;
+}
+
+$animals: cat, dog, tiger;
+@each $animal in $animals {
+	.#{$animal}-icon {
+		background: url("#{$animal}.png");
 	}
 }
