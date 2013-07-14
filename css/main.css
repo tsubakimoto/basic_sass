@@ -61,3 +61,12 @@
   float: left;
   width: 180px;
 }
+
+#mixin {
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+#mixin2 {
+  border-radius: 4px;
+}
