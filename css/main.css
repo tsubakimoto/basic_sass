@@ -4,3 +4,9 @@
 #main p {
   font-size: 14px;
 }
+#main p a {
+  text-decoration: none;
+}
+#main p a:hover {
+  font-weight: bold;
+}
