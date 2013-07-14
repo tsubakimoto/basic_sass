@@ -62,6 +62,21 @@
   width: 180px;
 }
 
+.msg, .errorMsg, .warningMsg {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  color: white;
+}
+
+.errorMsg {
+  background: red;
+}
+
+.warningMsg {
+  background: orange;
+}
+
 #mixin {
   font-size: 12px;
   border-radius: 5px;

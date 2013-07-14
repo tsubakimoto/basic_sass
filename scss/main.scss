@@ -43,6 +43,25 @@ $animals: cat, dog, tiger;
 	width: getColumnWidth($totalWidth, $columnCount);
 }
 
+
+.msg {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px 4px;
+	color: white;
+}
+
+.errorMsg {
+	@extend .msg;
+	background: red;
+}
+
+.warningMsg {
+	@extend .msg;
+	background: orange;
+}
+
+
 @mixin round($radius:4px) {
 	border-radius: $radius;
 }
