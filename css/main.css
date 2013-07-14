@@ -1,12 +1,10 @@
 #main {
   width: 90%;
+  background: url("../img/bg.png");
 }
 #main p {
   font-size: 14px;
 }
-#main p a {
-  text-decoration: none;
-}
-#main p a:hover {
-  font-weight: bold;
+#main p .sub {
+  font-size: 12px;
 }

@@ -1,13 +1,14 @@
+$baseFontSize: 14px;
+$imgDir: "../img/";
+
 #main {
 	width: 90%;
+//	background: url($imgDir + "bg.png");
+	background: url("#{$imgDir}bg.png");
 	p {
-		font-size: 14px;
-		a {
-			// link decoration
-			text-decoration: none;
-			&:hover {
-				font-weight: bold;
-			}
+		font-size: $baseFontSize;
+		.sub {
+			font-size: $baseFontSize - 2px;
 		}
 	}
 }
